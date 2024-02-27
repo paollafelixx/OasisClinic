@@ -15,16 +15,16 @@ API Rest do projeto Oasis
 ### Endpoints
 
 - [Listar Agendamentos](#listar-agendamentos)
+- [Cadastrar Agendamentos](#cadastrar-agendamentos)
 - [Apagar Agendamentos](#apagar-agendamentos)
 - [Detalhar Agendamentos](#detalhar-agendamentos)
-- [Cadastrar Agendamentos](#cadastrar-agendamentos)
 - [Atualizar Agendamentos](#atualizar-agendamentos)
 
 ### Listar Categorias
 
 `GET` /agendamentos
 
-Retorna um array com todas as agendamentos cadastradas pelo usuario atual.
+Retorna um array com todos as agendamentos cadastradas pelo usuario atual.
 
 ##### Exemplo de Respostas
 
@@ -42,7 +42,7 @@ Retorna um array com todas as agendamentos cadastradas pelo usuario atual.
 
 | código | descrição |
 |--------|-----------|
-|200| Categorias retornadas com sucesso
+|200| Agendamento retornado com sucesso
 |401| Não autorizado. Realize a autenticação em /login
 
 ---
@@ -51,7 +51,7 @@ Retorna um array com todas as agendamentos cadastradas pelo usuario atual.
 
 `POST` /agendamentos
 
-Cadastra um agendamentos com os dados enviados no corpo da requisição.
+Cadastra um agendamento com os dados enviados no corpo da requisição.
 
 #### Corpo de Requisição
 
